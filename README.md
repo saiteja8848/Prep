@@ -270,8 +270,89 @@ Content for Data Structures & Algorithms goes here.
 
 
 <details>
-<summary><strong>4. Testing and Types</strong></summary>
-Content for Testing and Types goes here.
+<summary><strong>4.About Software Testing</strong></summary>
+
+- **Types of Software Testing** 
+    - Software Testing can be broadly categorized into two types:
+        - Manual Testing : Testing performed manually by humans without using automated tools.Suitable for exploratory, usability, or ad-hoc testing.
+        - Automated Testing : Testing performed using automation tools and scripts.Efficient for repetitive tasks and regression testing.
+
+- **Levels of Software Testing** 
+    - These levels define the scope and purpose of testing at different stages of development:
+        - Unit Testing : 
+            - Focuses on testing individual components or functions.
+            - Example: Testing a single method in a class
+        - Integration Testing : 
+            - Tests interactions between multiple components or systems.
+            - Example: Verifying data flow between a frontend and a backend service.
+        - System Testing :
+            - Tests the complete application as a whole.
+            - Example: Verifying all features of an e-commerce website.
+        - Acceptance Testing :
+            - Ensures the software meets business requirements and is ready for release.
+            - Example: User Acceptance Testing (UAT).
+
+- **Types of Testing Based on Purpose** 
+    - Functional Testing:
+        - Verifies that software functions as intended.
+        - Example: Checking if a login form accepts valid credentials.    
+    - Non-Functional Testing:
+        - Focuses on performance, usability, and reliability.
+        - Examples :
+            - Performance Testing: Checks speed and stability under load.
+            - Security Testing: Identifies vulnerabilities in the application.
+            - Usability Testing: Ensures the software is user-friendly.
+    - Maintenance Testing:
+        - Conducted after software deployment to ensure stability during updates or changes.
+        - Example: Regression Testing.
+- **Ways to Perform Software Testing** 
+    - Black-Box Testing
+        - Focuses on input-output without knowing internal code.
+        - Example: Testing a calculator app by entering numbers.
+    - White-Box Testing
+        - Involves testing internal structures or code logic.
+        - Example: Testing loops and conditions in code.
+    - Gray-Box Testing
+        - Combines black-box and white-box approaches, with partial knowledge of the system.
+        - Example: Testing APIs with some knowledge of backend structure.
+
+- **Methods of Software Testing** 
+    - Static Testing
+        - Testing without executing the code.
+        - Example: Code reviews, walkthroughs, and static analysis.
+    - Dynamic Testing
+        - Testing by executing the software.  
+        - Example: Running the application and observing outputs.
+
+- **Techniques Used in Testing** 
+    - Boundary Value Analysis (BVA)
+        - Tests boundaries of input values.
+        - Example: Testing for 0, 1, and 2 if the range is 0-100.
+
+    - Equivalence Partitioning
+        - Divides input data into valid and invalid partitions.
+        - Example: Grouping age values into valid (18–60) and invalid (<18, >60).
+
+    - Decision Table Testing
+        - Tests combinations of inputs and their outcomes.
+        - Example: Verifying how a calculator handles various operator combinations.
+
+    - Exploratory Testing
+        - Ad-hoc testing without predefined test cases.
+        - Example: Randomly clicking around a UI to find hidden bugs.
+
+    - Regression Testing
+        - Ensures new changes don’t break existing functionality.
+        - Example: Retesting a shopping cart after adding a new discount feature.
+
+    - Smoke Testing
+        - Basic testing to check critical functionalities.
+        - Example: Ensuring the login page loads.
+
+    - Sanity Testing
+        - Focused testing to verify specific functionality after minor updates.
+        - Example: Testing only the search bar after its update.
+
 </details>
 
 ---
@@ -300,11 +381,13 @@ Content for Testing and Types goes here.
 
 <details>
 <summary><strong>5. Building, Deploying, Monitoring, and Rollback Plan</strong></summary>
-- Git
-- Docker  
-- Kubernetes  
-- Linux Commands
-- SLO, SLI && SLA  
+
+ - **Topics** 
+    - Git
+    - Docker  
+    - Kubernetes  
+    - Linux Commands
+    - SLO, SLI && SLA  
 
 </details>
 
