@@ -411,7 +411,7 @@ Content for Data Structures & Algorithms goes here.
 
 
 <details>
-<summary><strong>6. Upcoming Technology</strong></summary>
+<summary><strong>6.Learning</strong></summary>
 
 ## **Extraction,Transformation and Loading (ETL)**
 
