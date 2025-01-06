@@ -300,10 +300,11 @@ Content for Testing and Types goes here.
 
 <details>
 <summary><strong>5. Building, Deploying, Monitoring, and Rollback Plan</strong></summary>
+- Git
 - Docker  
 - Kubernetes  
 - Linux Commands
-- SLO, SLI &&   
+- SLO, SLI && SLA  
 
 </details>
 
@@ -329,6 +330,101 @@ Content for Testing and Types goes here.
 <details>
 <summary><strong>6. Upcoming Technology</strong></summary>
 
-- **Artificial Intelligence**
+## **Extraction,Transformation and Loading (ETL)**
+
+
+
+&nbsp;
+## **Artificial Intelligence**
+- Systems that simulate human intelligence.
+- Encompasses a broad range of techniques and applications.
+- Examples:
+  - Smart assistants (e.g., Siri, Alexa)
+  - Autonomous systems
+  - AI-driven decision-making systems
+
+### **Subfields of Artificial Intelligence**
+1. **Machine Learning (ML)**
+   - Systems that learn from data (structured and unstructured).
+   - Core techniques:
+     - **Supervised Learning**: Learn from labeled data (e.g., regression, classification).
+     - **Unsupervised Learning**: Find patterns in unlabeled data (e.g., clustering, dimensionality reduction).
+     - **Reinforcement Learning**: Learn by interacting with an environment.
+   - Foundations:
+     - Inference and Statistical Modeling
+     - Evaluation Metrics (e.g., Accuracy, F1-Score)
+
+2. **Deep Learning (DL)**
+   - Neural networks with multiple layers (hierarchical learning).
+   - Specialized architectures:
+     - **Convolutional Neural Networks (CNNs)**: For image-related tasks.
+     - **Recurrent Neural Networks (RNNs)**: For sequence and time-series data.
+     - **Transformers**: For text, vision, and multimodal tasks.
+   - Applications:
+     - Image recognition
+     - Speech synthesis
+     - Generative content creation
+
+3. **Natural Language Processing (NLP)**
+   - Systems that process and understand human language.
+   - Core tasks:
+     - Text classification (e.g., spam detection)
+     - Sentiment analysis
+     - Machine translation
+     - Question answering
+   - Advanced models:
+     - BERT, GPT, and T5 for contextual understanding.
+   - Applications:
+     - Chatbots
+     - Voice assistants
+     - Summarization tools
+
+4. **Generative AI**
+   - AI systems that generate new content (e.g., text, images, music).
+   - Core techniques:
+     - **Variational Autoencoders (VAEs)**: Generate structured outputs.
+     - **Generative Adversarial Networks (GANs)**: Create realistic media content.
+     - **Diffusion Models**: Emerging for high-quality image and video generation.
+   - Applications:
+     - DALL·E: Text-to-image generation.
+     - ChatGPT: Conversational AI.
+     - Codex: AI for code generation.
+
+5. **Retrieval-Augmented Generation (RAG)**
+   - A combination of generative AI and retrieval systems.
+   - Core concepts:
+     - Use knowledge bases and search engines to augment model responses.
+     - Example tools: LangChain, Pinecone, Weaviate.
+   - Applications:
+     - Knowledge-driven chatbots.
+     - Intelligent document querying.
+     - Personalized learning assistants.
+
+---
+
+## **Hierarchy of AI Topics**
+### 1. Artificial Intelligence (Parent Domain)
+   - High-level systems simulating human intelligence.
+
+### 2. Machine Learning (Subfield)
+   - Learning from structured and unstructured data.
+   - Techniques: Supervised, Unsupervised, and Reinforcement Learning.
+
+### 3. Deep Learning (Subset of ML)
+   - Neural networks with hierarchical structures.
+   - Specialized for complex tasks such as image and text processing.
+
+### 4. Natural Language Processing (Subset of AI)
+   - Focus on processing and understanding human language.
+   - Advanced models include transformers like BERT and GPT.
+
+### 5. Generative AI (Subset of AI)
+   - Focus on creating new and original content.
+   - Techniques: GANs, VAEs, Diffusion Models.
+
+### 6. Retrieval-Augmented Generation (Emerging AI Subfield)
+   - Augments generative models with external knowledge.
+   - Tools: LangChain, vector databases.
+
 
 </details>
