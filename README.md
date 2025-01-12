@@ -324,6 +324,16 @@ Content for Data Structures & Algorithms goes here.
         - Testing by executing the software.  
         - Example: Running the application and observing outputs.
 
+    - ## Comparison of TDD and BDD
+        | **Aspect**          | **TDD**                                   | **BDD**                                   |
+        |----------------------|-------------------------------------------|-------------------------------------------|
+        | **Focus**           | Code functionality                        | User behavior and business requirements   |
+        | **Syntax**          | Programming language (unit tests)         | Natural language (Gherkin syntax)         |
+        | **Collaboration**   | Primarily developer-centric               | Involves stakeholders, QA, and developers |
+        | **Tools**           | JUnit, NUnit, pytest                      | Cucumber, SpecFlow, Behave                |
+        | **Test Granularity**| Unit tests                                | Behavior (end-to-end or integration tests) |
+
+
 - **Techniques Used in Testing** 
     - Boundary Value Analysis (BVA)
         - Tests boundaries of input values.
