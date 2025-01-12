@@ -172,7 +172,7 @@
 <details>
 <summary><strong>2. Data Structures & Algorithms</strong></summary>
 
-Content for Data Structures & Algorithms goes here.
+- [My DSA Repository](https://github.com/saiteja8848/DSA)
 
 </details>
 
