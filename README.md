@@ -237,12 +237,28 @@
 <details>
 <summary><strong>c) Backend</strong></summary>
 
-- Programming Languages  
-- Build Automation Tools:  
+A) Programming Languages  
+  - Basics
+    - Java Syntax and Structure
+    - Variables and enum
+    - Control flow statements
+    - Functions and Methods
+    - Exception Handling
+    - Input and output handling
+    - File Handling
+ - Object oriented programming
+ - Java Memory management
+ - Mutlithreading and event-loop
+ - Datasturctures - collections
+ - Reflections,Annotations
+ - Functional programming concepts
+
+B) Build Automation Tools:  
   - Gradle  
   - Maven  
   - Ant  
-- Frameworks:  
+
+C) Frameworks  
   - Reactive  
   - Non-Reactive  
 
