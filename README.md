@@ -227,8 +227,74 @@
 - Scripting Language (JavaScript)  
 - Frameworks:  
   - **Angular Concepts**  
-    - Build Automation Tools  
-    - Unit Testing  
+    - 1. Introduction to Angular
+        - What is Angular?
+        - Why Angular?
+        - Angular CLI: Installing and creating a new project using Angular CLI.
+
+    - 2. Basic Setup & Architecture
+        - Angular Modules (NgModules): Understanding the purpose of NgModules and how they are used to organize the app.
+        - Component Basics: Learn how to create components, templates, and styles.
+        - Component Metadata: Use of @Component decorator, understanding component lifecycle.
+    
+    - 3. Templates & Directives
+        - Data Binding: Interpolation, property binding, event binding, and two-way binding.
+        - Directives: Structural directives (ngIf, ngFor), and attribute directives (ngClass, ngStyle).
+        
+    - 4. Services & Dependency Injection
+        - What are Services?
+        - Injecting Services into Components: Using the constructor to inject services.
+        - Dependency Injection (DI): Angular’s DI mechanism for managing dependencies.
+       
+    - 5. Routing
+        - Setting up Angular Routing: How to configure routes using RouterModule.
+        - Route Parameters: Dynamic route parameters and query parameters.
+        - Navigation and Guards: How to programmatically navigate and use route guards for protecting routes.
+
+    - 6. Forms
+       - Template-driven Forms: Working with ngModel, form validation, and form controls.
+       - Reactive Forms: Creating form groups, form controls, and handling validation in reactive forms.
+
+
+    - 7. Http Client & Observables
+       - Making HTTP Requests: Using Angular's HttpClient to make API calls.
+       - Observables: Understanding the role of RxJS Observables in Angular, handling async data.
+       - Http Interceptors: Modifying requests and responses globally.
+
+
+    - 8. Pipes
+        - Built-in Pipes: Understanding pipes like DatePipe, CurrencyPipe, JsonPipe, etc.
+        - Custom Pipes: Creating your own pipes for transforming data.
+
+    - 9. State Management
+        - Service-based State Management: Using services to manage state between components.
+        - NgRx (optional): Advanced state management using the Redux pattern with NgRx.
+
+
+    - 10. Lifecycle Hooks
+        - Component Lifecycle: Understanding lifecycle methods like ngOnInit, ngOnChanges, ngOnDestroy, etc.
+        - Change Detection: Learn how Angular detects changes in components and updates the UI.
+
+    - 11. Unit Testing
+        - Testing Components: Writing unit tests for components using Jasmine and Karma.
+        - Testing Services: Mocking dependencies and writing tests for services.
+
+
+    - 12. Advanced Topics
+       - Lazy Loading: Load feature modules on demand to optimize application performance.
+       - Custom Directives: Creating reusable custom directives.
+       - Angular Universal: Server-side rendering (SSR) for Angular apps.
+       - Advanced RxJS: Learn higher-order observables, operators like switchMap, mergeMap, etc.
+       - Web Workers: Running heavy tasks in a separate thread.
+       - Custom Schematics: Create custom CLI commands for Angular projects.
+
+    - 13. Optimization and Performace
+       - Ahead-of-Time Compilation (AOT): Benefits and how Angular compiles templates before the browser.
+       - Tree Shaking: Removing unused code.
+       - Change Detection Strategies: OnPush strategy for optimization.
+       - Lazy Loading Routes & Modules: Loading modules only when required.
+
+  
 
 </details>
 
@@ -259,6 +325,12 @@ B) Build Automation Tools:
   - Ant  
 
 C) Frameworks  
+  - A) Modules
+      - Security
+      - Database connectivity
+      - Logging
+
+
   - Reactive  
   - Non-Reactive  
 
