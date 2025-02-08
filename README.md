@@ -211,11 +211,14 @@
 <summary><strong>a) Understanding</strong></summary>
 
 - Computer Fundamentals  
-- Operating System  
+- Operating System - commands
 - Networking  
 - Internet and Web  
 - Programming Languages and Paradigms  
-
+- Build Automation tools
+  - Gradle  
+  - Maven  
+  - Ant  
 </details>
 
 
@@ -294,8 +297,6 @@
        - Change Detection Strategies: OnPush strategy for optimization.
        - Lazy Loading Routes & Modules: Loading modules only when required.
 
-  
-
 </details>
 
 
@@ -319,30 +320,18 @@ A) Programming Languages
  - Reflections,Annotations
  - Functional programming concepts
 
-B) Build Automation Tools:  
-  - Gradle  
-  - Maven  
-  - Ant  
 
-C) Frameworks  
+B) Frameworks  
   - A) Modules
       - Security
       - Database connectivity
       - Logging
-
-
-  - Reactive  
-  - Non-Reactive  
+  - B) Reactive && Non-Reactive  
 
 </details>
 
 
-<details>
-<summary><strong>d) Database</strong></summary>
 
-- SQL Database (ACID)  
-- NoSQL Database (BASE)  
-</details>
 
 </details>
 
