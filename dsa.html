@@ -38,7 +38,7 @@
     <tr><td>Trie</td><td>—</td><td>O(L)</td><td>O(L)</td><td>O(L)</td></tr>
   </table>
 
-  <h2 class="section">Core Patterns</h2>
+  <!-- <h2 class="section">Core Patterns</h2>
   <div class="grid">
     <div class="card"><h3>Two Pointers</h3><ul class="tight"><li>Sorted arrays, strings window</li><li>Template: i=0, j=n-1; while(i<j){...}</li></ul></div>
     <div class="card"><h3>Sliding Window</h3><ul class="tight"><li>Subarray/substring with constraints</li><li>Maintain counts/sets; shrink on violation</li></ul></div>
@@ -48,56 +48,7 @@
     <div class="card"><h3>Binary Search</h3><ul class="tight"><li>On value/answer; invariants</li><li>mid = l + (r-l)//2</li></ul></div>
     <div class="card"><h3>Greedy</h3><ul class="tight"><li>Sorting + local optimal choice</li><li>Proof via exchange argument</li></ul></div>
     <div class="card"><h3>Graph</h3><ul class="tight"><li>BFS/DFS, Dijkstra, Topo sort</li><li>Visited sets, parent tracking</li></ul></div>
-  </div>
-
-  <h2 class="section">Java Templates</h2>
-  <details class="accordion"><summary>Binary Search (on Answer)</summary>
-    <div class="pad code"><pre><code>int solve(int[] a){
-  int l = 0, r = 1_000_000_000;
-  while(l &lt; r){
-    int m = l + (r - l)/2;
-    if(check(a, m)) r = m; else l = m + 1;
-  }
-  return l;
-}
-// boolean check(...) implements feasibility
-</code></pre></div>
-  </details>
-
-  <details class="accordion"><summary>Sliding Window (max length with constraint)</summary>
-    <div class="pad code"><pre><code>int atMostKDistinct(int[] a, int k){
-  Map&lt;Integer,Integer&gt; cnt = new HashMap&lt;&gt;();
-  int i=0, best=0;
-  for(int j=0;j&lt;a.length;j++){
-    cnt.merge(a[j],1,Integer::sum);
-    while(cnt.size() &gt; k){
-      cnt.put(a[i], cnt.get(a[i])-1);
-      if(cnt.get(a[i])==0) cnt.remove(a[i]);
-      i++;
-    }
-    best = Math.max(best, j - i + 1);
-  }
-  return best;
-}
-</code></pre></div>
-  </details>
-
-  <details class="accordion"><summary>Graph: BFS & Dijkstra</summary>
-    <div class="pad code"><pre><code>int bfs(int n, List&lt;List&lt;Integer&gt;&gt; g, int s){
-  Queue&lt;Integer&gt; q = new ArrayDeque&lt;&gt;();
-  boolean[] seen = new boolean[n];
-  int[] dist = new int[n];
-  q.add(s); seen[s]=true;
-  while(!q.isEmpty()){
-    int u=q.poll();
-    for(int v:g.get(u)){
-      if(!seen[v]){seen[v]=true;dist[v]=dist[u]+1;q.add(v);}
-    }
-  }
-  return Arrays.stream(dist).max().getAsInt();
-}
-</code></pre></div>
-  </details>
+  </div> -->
 
 
 <h2 class="section">DSA Questions (from Your Repo)</h2>
@@ -254,28 +205,6 @@
   </div>
 </details>
 
-
-  <h2 class="section">30-Day Practice Plan</h2>
-  <details class="accordion"><summary>Plan & Checklist</summary>
-    <div class="pad">
-      <ol>
-        <li><b>Week 1:</b> Arrays/Strings (prefix, two pointers), Hashing</li>
-        <li><b>Week 2:</b> Stack/Queue, LinkedList, Sliding Window</li>
-        <li><b>Week 3:</b> Trees/Tries, Heaps, Binary Search</li>
-        <li><b>Week 4:</b> Graphs & DP basics</li>
-      </ol>
-      <div class="chips">
-        <div class="chip">Daily 2 easy</div><div class="chip">3 medium</div><div class="chip">Review notes</div><div class="chip">Mock weekly</div>
-      </div>
-    </div>
-  </details>
-
-  <h2 class="section">Common Pitfalls</h2>
-  <ul class="tight">
-    <li>Off-by-one in sliding windows and binary search bounds.</li>
-    <li>Forgetting to mark visited or to check edge cases (empty, single-element).</li>
-    <li>Inefficient data structures (e.g., LinkedList random access).</li>
-  </ul>
 </div>
 <div class="footer">DSA · Interview Prep</div>
 <script src="assets/script.js"></script>
