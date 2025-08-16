@@ -1,0 +1,41 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build & Deploy — Interview Prep</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+
+<div class="nav">
+  <div class="wrap container">
+    <div class="brand">Interview Prep</div>
+    <nav style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="index.html">Home</a>
+      <a href="system-design.html">System Design</a>
+      <a href="dsa.html">DSA</a>
+      <a href="development.html">Development</a>
+      <a href="testing.html">Testing</a>
+      <a href="devops.html">Build & Deploy</a>
+      <a href="ai.html">AI & ETL</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Build, Deploy, Monitor & Rollback</h1>
+  <div class="grid">
+    <div class="card"><h3>Git</h3><p>Trunk-based vs GitFlow, PR reviews, CI checks.</p></div>
+    <div class="card"><h3>CI/CD</h3><p>Build → Test → Scan → Deploy; blue/green, canary.</p></div>
+    <div class="card"><h3>Containers</h3><p>Docker images, multi-stage builds, SBOM.</p></div>
+    <div class="card"><h3>Kubernetes</h3><p>Deployments, HPA, Ingress, ConfigMap/Secret.</p></div>
+    <div class="card"><h3>Monitoring</h3><p>Prometheus, Grafana, tracing, alerting.</p></div>
+    <div class="card"><h3>SLO/SLI/SLA</h3><p>Error budgets, burn rates, on-call runbooks.</p></div>
+  </div>
+  <details class="accordion"><summary>Rollback Strategies</summary>
+    <div class="pad">
+      <ul class="tight"><li>Instant rollback via release toggles</li><li>DB backward-compatible migrations</li><li>Shadow traffic & smoke tests post-deploy</li></ul>
+    </div>
+  </details>
+</div>
+<div class="footer">DevOps · Interview Prep</div>
+<script src="assets/script.js"></script>
+</body></html>

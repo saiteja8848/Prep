@@ -1,0 +1,418 @@
+
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>System Design — Interview Prep</title>
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+
+<div class="nav">
+  <div class="wrap container">
+    <div class="brand">Interview Prep</div>
+    <nav style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="index.html">Home</a>
+      <a href="system-design.html">System Design</a>
+      <a href="dsa.html">DSA</a>
+      <a href="development.html">Development</a>
+      <a href="testing.html">Testing</a>
+      <a href="devops.html">Build & Deploy</a>
+      <a href="ai.html">AI & ETL</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  
+  <section id="projects">
+  <h2>Real World Projects & Business Categories</h2>
+  <p>
+    Below are major business categories that have transformed through digitalization,
+    famous companies leading the way, and the system design concepts & interview problems most relevant to each:
+  </p>
+  <div class="table-container">
+    <table>
+  <thead>
+    <tr>
+      <th>Business Category</th>
+      <th>Famous Companies</th>
+      <th>Digitalization Timeline</th>
+      <th>Related System Design Concepts & Interview Problems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E-Commerce</td>
+      <td>Amazon, Flipkart, eBay</td>
+      <td>1990s → Online Shopping Boom</td>
+      <td>
+        <ul>
+          <li>Design E-commerce Store like Amazon</li>
+          <li>Design Shopify</li>
+          <li>Design Autocomplete for Search Engines</li>
+          <li>Catalog Service</li>
+          <li>Search Engine</li>
+          <li>Recommendation Systems</li>
+          <li>Payment Gateway</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Banking & Finance</td>
+      <td>PayPal, Stripe, JPMorgan</td>
+      <td>2000s → Online Banking, Digital Wallets</td>
+      <td>
+        <ul>
+          <li>Design Unified Payments Interface (UPI)</li>
+          <li>Design Payment System</li>
+          <li>Design a Digital Wallet</li>
+          <li>Transaction Processing</li>
+          <li>Fraud Detection</li>
+          <li>Authentication System</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Healthcare</td>
+      <td>Practo, ZocDoc, Cerner</td>
+      <td>2010s → Telemedicine, Health Records</td>
+      <td>
+        <ul>
+          <li>Appointment Scheduling Systems</li>
+          <li>HIPAA-Compliant Storage</li>
+          <li>Data Privacy & Security</li>
+          <li>Design Notification Service</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Education</td>
+      <td>Coursera, Byju’s, Udemy</td>
+      <td>2010s → Online Learning Platforms</td>
+      <td>
+        <ul>
+          <li>Video Streaming</li>
+          <li>Scalable Content Delivery</li>
+          <li>Recommendation Engine</li>
+          <li>Design Online Code Editor</li>
+          <li>Design Google Docs</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Transportation</td>
+      <td>Uber, Lyft, Ola</td>
+      <td>2010s → Ride-Hailing Apps</td>
+      <td>
+        <ul>
+          <li>Design Uber</li>
+          <li>Real-Time Tracking</li>
+          <li>Matching Algorithms</li>
+          <li>Surge Pricing Systems</li>
+          <li>Design Location Based Service like Yelp</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Entertainment</td>
+      <td>Netflix, Spotify, YouTube</td>
+      <td>2000s → Streaming Revolution</td>
+      <td>
+        <ul>
+          <li>Design Netflix</li>
+          <li>Design Spotify</li>
+          <li>Design Youtube</li>
+          <li>Design TikTok</li>
+          <li>Design Content Delivery Network (CDN)</li>
+          <li>Recommendation Engine</li>
+          <li>Caching Systems</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Retail</td>
+      <td>Walmart, Target, IKEA (Online)</td>
+      <td>2010s → Omni-channel Retail</td>
+      <td>
+        <ul>
+          <li>Inventory Management</li>
+          <li>Order Fulfillment</li>
+          <li>POS Integration</li>
+          <li>Design Vending Machine</li>
+          <li>Design Parking Garage</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Travel & Hospitality</td>
+      <td>Airbnb, Booking.com, Expedia</td>
+      <td>2010s → Online Booking Systems</td>
+      <td>
+        <ul>
+          <li>Design Airbnb</li>
+          <li>Reservation Systems</li>
+          <li>Search & Filter</li>
+          <li>Payment Gateway</li>
+          <li>Design Flight Booking System</li>
+          <li>Design Ticket Booking System like BookMyShow</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Food Delivery</td>
+      <td>Zomato, Swiggy, DoorDash</td>
+      <td>2010s → On-demand Delivery</td>
+      <td>
+        <ul>
+          <li>Design Food Delivery App like Doordash</li>
+          <li>Order Matching</li>
+          <li>Real-Time Tracking</li>
+          <li>Notification System</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Logistics</td>
+      <td>DHL, FedEx, Delhivery</td>
+      <td>2000s → Digital Tracking & Automation</td>
+      <td>
+        <ul>
+          <li>Warehouse Management</li>
+          <li>Route Optimization</li>
+          <li>IoT Tracking</li>
+          <li>Design Distributed Message Queue like Kafka</li>
+          <li>Design Distributed Job Scheduler</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Legal</td>
+      <td>LegalZoom, Clio, Rocket Lawyer</td>
+      <td>2010s → Digital Legal Services</td>
+      <td>
+        <ul>
+          <li>Document Management</li>
+          <li>Workflow Automation</li>
+          <li>Secure Databases</li>
+          <li>Design Google Docs</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Real Estate</td>
+      <td>Zillow, 99Acres, MagicBricks</td>
+      <td>2010s → Property Search Platforms</td>
+      <td>
+        <ul>
+          <li>Search & Filter Systems</li>
+          <li>Map APIs</li>
+          <li>Recommendation Engines</li>
+          <li>Design Location Based Service like Yelp</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Gaming</td>
+      <td>Steam, Epic Games, Xbox Live</td>
+      <td>2000s → Online Gaming Platforms</td>
+      <td>
+        <ul>
+          <li>Design Leaderboard</li>
+          <li>Real-Time Multiplayer Systems</li>
+          <li>Design Distributed Counter</li>
+          <li>Design Distributed Locking Service</li>
+          <li>Cloud Gaming</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Social Media</td>
+      <td>Facebook, Twitter (X), Instagram</td>
+      <td>2000s → Social Networking Era</td>
+      <td>
+        <ul>
+          <li>Design Facebook</li>
+          <li>Design Twitter</li>
+          <li>Design Instagram</li>
+          <li>Design Reddit</li>
+          <li>Design Tinder</li>
+          <li>News Feed Systems</li>
+          <li>Notification Services</li>
+          <li>Messaging Systems</li>
+          <li>Design Slack</li>
+          <li>Design Live Comments</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Government & Public Services</td>
+      <td>IRS Online, DigiLocker, UIDAI</td>
+      <td>2010s → E-Governance</td>
+      <td>
+        <ul>
+          <li>Secure Authentication</li>
+          <li>Document Storage</li>
+          <li>Identity Management</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Insurance</td>
+      <td>Acko, PolicyBazaar, Allianz</td>
+      <td>2010s → Online Policy Platforms</td>
+      <td>
+        <ul>
+          <li>Claims Processing</li>
+          <li>Risk Modeling</li>
+          <li>Secure Databases</li>
+          <li>Design Analytics Platform (Metrics & Logging)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Agriculture</td>
+      <td>Crofarm, Ninjacart, Indigo Ag</td>
+      <td>2020s → AgriTech Revolution</td>
+      <td>
+        <ul>
+          <li>Supply Chain Systems</li>
+          <li>IoT Sensors</li>
+          <li>Predictive Analytics</li>
+          <li>Design Distributed Key-Value Store</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Energy & Utilities</td>
+      <td>Tesla Energy, Enphase, GE</td>
+      <td>2020s → Smart Grids & IoT</td>
+      <td>
+        <ul>
+          <li>IoT Systems</li>
+          <li>Real-Time Monitoring</li>
+          <li>Predictive Maintenance</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+  <h1>System Design</h1>
+  <p>From architectural choices to monitoring, here's a concise yet deep guide.</p>
+
+  <h2 class="section" id="hld">High-Level Design (HLD)</h2>
+
+  <details class="accordion" open><summary>1) Architectural Patterns</summary>
+    <div class="pad grid">
+      <div class="card"><h3>Monolithic</h3><ul class="tight">
+        <li>✅ Simple deploys, easy dev loop</li><li>❌ Scalability & coupling issues</li>
+        <li><b>Use when:</b> small teams, MVPs, strong cohesion</li></ul></div>
+      <div class="card"><h3>Microservices</h3><ul class="tight">
+        <li>✅ Independent scale & release</li><li>❌ Operational complexity</li>
+        <li><b>Use when:</b> bounded contexts & high scale</li></ul></div>
+      <div class="card"><h3>Event-Driven</h3><ul class="tight">
+        <li>✅ Async, decoupled</li><li>❌ Debugging & consistency challenges</li>
+        <li><b>Use when:</b> high throughput, eventual consistency ok</li></ul></div>
+      <div class="card"><h3>Serverless</h3><ul class="tight">
+        <li>✅ No infra mgmt, scale-to-zero</li><li>❌ Cold starts, vendor lock-in</li>
+        <li><b>Use when:</b> bursty workloads, glue code</li></ul></div>
+    </div>
+  </details>
+
+  <details class="accordion"><summary>2) Core Components</summary>
+    <div class="pad grid">
+      <div class="card"><h3>API Gateway</h3><p>Routing, authN/Z, rate limits, request shaping.</p></div>
+      <div class="card"><h3>Load Balancer</h3><p>L4/L7, health checks, sticky sessions.</p></div>
+      <div class="card"><h3>Database</h3><p>SQL vs NoSQL, CAP, indexing, sharding.</p></div>
+      <div class="card"><h3>Cache</h3><p>Redis/Memcached; TTLs, eviction, cache-aside/write-through.</p></div>
+      <div class="card"><h3>Queue/Stream</h3><p>Kafka/RabbitMQ; backpressure, retries, DLQs.</p></div>
+      <div class="card"><h3>Storage</h3><p>Object vs block; lifecycle, encryption, costs.</p></div>
+    </div>
+  </details>
+
+  <details class="accordion"><summary>3) Scalability, Reliability & Performance</summary>
+    <div class="pad">
+      <ul class="tight">
+        <li>Horizontal scaling, consistent hashing, partitioning</li>
+        <li>Replication, quorum, circuit breakers, bulkheads</li>
+        <li>Latency budgets, caching strategies, CDNs</li>
+      </ul>
+      <div class="callout"><b>Rule:</b> Optimize read paths with caches/CDN; write paths with partitioning.</div>
+    </div>
+  </details>
+
+  <details class="accordion"><summary>4) Security & Deployment</summary>
+    <div class="pad grid">
+      <div class="card"><h3>Security</h3><ul class="tight"><li>OAuth2/OIDC, JWT, mTLS</li><li>Input validation, WAF, threat modeling</li></ul></div>
+      <div class="card"><h3>CI/CD</h3><ul class="tight"><li>Blue/Green, Canary, feature flags</li><li>Rollbacks, migrations, smoke tests</li></ul></div>
+      <div class="card"><h3>Observability</h3><ul class="tight"><li>Metrics, logs, traces</li><li>SLIs/SLOs, error budgets</li></ul></div>
+    </div>
+  </details>
+
+  <h2 class="section" id="lld">Low-Level Design (LLD)</h2>
+
+  <details class="accordion" open><summary>1) OOD & Design Principles</summary>
+    <div class="pad grid">
+      <div class="card"><h3>SOLID</h3><p>Single responsibility, Open/closed, Liskov, Interface segregation, Dependency inversion.</p></div>
+      <div class="card"><h3>Patterns</h3><p>Creational (Factory, Builder), Structural (Adapter, Decorator), Behavioral (Strategy, Observer).</p></div>
+      <div class="card"><h3>UML</h3><p>Class, Sequence, Activity diagrams for communication.</p></div>
+    </div>
+  </details>
+
+  <details class="accordion"><summary>2) Data & DB Design</summary>
+    <div class="pad">
+      <ul class="tight">
+        <li>Schema normalization vs denormalization</li>
+        <li>Transactions: ACID vs BASE, isolation levels</li>
+        <li>Indexes: B-Tree, Hash; query optimization</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion"><summary>3) Concurrency & Multithreading</summary>
+    <div class="pad">
+      <ul class="tight">
+        <li>Threads, locks, deadlock avoidance</li>
+        <li>Async patterns, futures/promises</li>
+        <li>Concurrent collections, immutability</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion"><summary>4) API Design</summary>
+    <div class="pad">
+      <ul class="tight">
+        <li>OpenAPI/Swagger, resource modeling</li>
+        <li>Versioning, pagination, rate limiting</li>
+        <li>Error contracts, idempotency keys</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="accordion"><summary>5) Testing & Perf</summary>
+    <div class="pad">
+      <ul class="tight">
+        <li>Unit/Integration/Contract tests</li>
+        <li>Profiling, memory management, refactoring</li>
+      </ul>
+    </div>
+  </details>
+
+  <h2 class="section">Interview Prompts</h2>
+  <div class="grid">
+    <div class="card"><h3>URL Shortener</h3><p>Hashing, collision handling, DB, cache, hot keys.</p></div>
+    <div class="card"><h3>Feed System</h3><p>Fanout, ranking, caching, pagination, backfills.</p></div>
+    <div class="card"><h3>Chat</h3><p>WebSockets, presence, ordering, delivery semantics.</p></div>
+    <div class="card"><h3>Search</h3><p>Inverted index, ranking, sharding, autosuggest.</p></div>
+  </div>
+</div>
+<div class="footer">System Design · Interview Prep</div>
+<script src="assets/script.js"></script>
+</body></html>
